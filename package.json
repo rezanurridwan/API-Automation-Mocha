@@ -1,0 +1,19 @@
+{
+  "name": "api-automation-sanbercode",
+  "version": "1.0.0",
+  "description": "this is how to learn mocha and chai",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "reza",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.0.3",
+    "json": "^11.0.0",
+    "mocha": "^10.2.0",
+    "schema": "^0.2.1",
+    "supertest": "^6.3.4"
+  }
+}
