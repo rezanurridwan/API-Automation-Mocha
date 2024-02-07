@@ -12,7 +12,7 @@ describe('TS01 - Create token for auth', () => {
         "username": "admin",
         "password":"password123"
     });
-    
+
     expect((await response).status).to.equal(200);
     expect((await response).body).to.have.property('token');
   });
