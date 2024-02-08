@@ -24,5 +24,6 @@ describe('TS01 - Create booking', () => {
     .send(payloads)
     console.log(payloads);
     expect((await response).status).to.equal(200);
-    })
+    });
+
 });
