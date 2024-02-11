@@ -6,7 +6,7 @@ import '../Auth/Login.js'
 describe('Create user', () => {
     const users = {
         "name": "kasir",
-        "email": "user@e.com",
+        "email": "user@ex.com",
         "password": "jiasda2321@"
      }
      
@@ -37,7 +37,7 @@ describe('Create user', () => {
     }
         
     const response = await request(baseUrlKasirAja)
-    .put('/users/5')
+    .put('/users/576ed8d3-c65c-48bf-bb6b-ad865c18d528')
     .set('Authorization',`Bearer ${globalToken}`)
     .send(updateUser)
 

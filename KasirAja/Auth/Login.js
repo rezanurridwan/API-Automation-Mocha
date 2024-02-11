@@ -8,7 +8,7 @@ describe('Login account', () => {
     const db = 
     {
        "email": "sample@ex.com",
-       "password": "123adsfadf@",
+       "password": "123adsfadf@"
     }
     
   it('login with data valid', async() => {
