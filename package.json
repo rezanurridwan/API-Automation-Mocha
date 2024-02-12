@@ -5,15 +5,26 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "suites:registration": "npx mocha --reporter mochawesome KasirAja/Auth/Registration.js",
+    "suites:login": "npx mocha --reporter mochawesome KasirAja/Auth/Login.js",
+    "suites:customer": "npx mocha --reporter mochawesome KasirAja/Customers/customers.js",
+    "suites:product": "npx mocha --reporter mochawesome KasirAja/Product/product.js",
+    "suites:transaction": "npx mocha --reporter mochawesome KasirAja/Transaction/transaction.js",
+    "suites:unit": "npx mocha --reporter mochawesome KasirAja/Units/Units.js",
+    "suites:user": "npx mocha --reporter mochawesome KasirAja/Users/User.js",
+    "suites:category": "npx mocha --reporter mochawesome KasirAja/Category/category.js",
+    "suites:all": "npx mocha --reporter mochawesome KasirAja/allmodules.js"
   },
   "author": "reza",
   "license": "ISC",
   "dependencies": {
     "chai": "^5.0.3",
     "json": "^11.0.0",
-    "mocha": "^10.2.0",
     "schema": "^0.2.1",
     "supertest": "^6.3.4"
+  },
+  "devDependencies": {
+    "mocha": "^10.3.0",
+    "mochawesome": "^7.1.3"
   }
 }
